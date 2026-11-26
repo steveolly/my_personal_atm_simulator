@@ -7,6 +7,8 @@ class Account:
         self.owner = owner
         self.pin = pin
         self.balance = balance
+        self.failed_attempts = 0
+        self.is_blocked = False
 
     def check_balance(self):
         return self.balance
